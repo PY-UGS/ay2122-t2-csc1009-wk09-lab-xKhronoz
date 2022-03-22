@@ -73,13 +73,11 @@ public class RandomCharacter {
     }
 
 
-    public boolean isPrime(char value){
-        int a = value;
+    public boolean isPrime(int value){
+        int numbers = (int)Math.sqrt(value) + 1;
 
-        int numbers = (int)Math.sqrt(a);
-
-        for (int i = 2; i< numbers ; i++ ){
-            if (a % i == 0 ){
+        for (int i = 2; i < numbers ; i++ ){
+            if (value % i == 0 ){
                 return false;
             }
         }
